@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .header-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .header-button:hover {
+            background-color: #218838;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button {
+            padding: 10px 150px;
+            font-size: 20px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .blog-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Alert Function
+        function showAlert() {
+            let alertMessage = "We will pay you $50 at the end of the month if you share your football opinion on EPL and LA-LIGA matches on our videos";
+            if (confirm(alertMessage + ". CLICK OK TO BEGIN")) {
+                document.querySelector('.content').style.display = 'block';
+            }
+        }
+
+        // Show alert when the page loads
+        window.onload = showAlert;
+
+        // Function for payment button alert
+        function paymentAlert() {
+            alert("Your payment will open if you get 50 comments on 20 videos we post");
+        }
+
+        // Function for navigating to a website
+        function goToWebsite(url) {
+            window.location.href = url;
+        }
+    </script>
+
+    <!-- Content to be shown after the alert -->
+    <div class="container">
+        <button onclick="paymentAlert()">CHECK YOUR PAYMENT</button>
+        <p><b><a href='https://bet546.github.io/ai/ '>CLICK TO WATCH OUR BET ODDS FOR TODAY </a></b></p>
+        <button onclick="goToWebsite('https://www.amazon.com/gp/product/B0CY7LFZL8 ')">
+            CLICK HERE TO SHARE YOUR OPINION<br>ON DEBRYN AND INIESTA DEBATE<br> WHO IS THE BEST<br> 
+        </button>
+    </div>
+</body>
+</html>
